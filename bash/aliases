@@ -1,0 +1,68 @@
+
+#Alias section
+alias s='ssh -A'
+alias r='rails'
+alias ll='ls -lart'
+alias la='ls -la'
+alias home='ssh www.lasamaria.com'
+alias new='. ~/openterminal.sh'
+alias ss='./script/server'
+alias sun='ssh -p 15151 www.lasamaria.com'
+alias cht1utlb001='ssh cht1utlb001.eng.charone.com'
+
+
+#SSH alias
+alias utla='ssh -A -p 15151 jmaya@216.236.227.145'
+alias utld='ssh -p 15151 168.75.198.182'
+alias utlb='ssh -p 15151 216.236.227.210'
+alias server='ssh www.lasamaria.com'
+alias ssh='ssh -A'
+alias stagewebis='ssh -L 3000:10.241.13.28:3000 jmaya@168.75.198.182 -p 15151'
+
+#Top
+alias tu='top -o cpu' #cpu
+alias tm='top -o vsize' #memory
+
+# Subversion
+alias sup='svn update'
+alias sst='svn status'
+alias scom='svn commit'
+alias sd='svn diff | mate'
+alias slog='svn log | more'
+alias sex='svn export'
+
+# TextMate
+alias e='mate'
+alias et='mate . &'
+alias ett='mate app config lib db public test vendor/plugins &'
+
+#Ruby
+alias att='autotest'
+
+#Rails
+alias kl='killall -9 lighttpd; killall -9 ruby'
+alias ss='./script/server'
+alias sc='./script/console'
+alias sg='./script/generate'
+alias sp='./script/plugin'
+alias mr='mongrel_rails start'
+alias tt="autotask 'rake test:recent' app test"
+
+alias a='autotest -rails'
+alias tlog='tail -f log/development.log'
+alias migrate='rake db:migrate db:test:clone'
+alias rst='touch tmp/restart.txt'
+alias r=rails
+
+# Git aliases for bash
+# Put in ~/.bash_profile
+
+alias gst='git status'
+alias gl='git pull'
+alias gp='git push'
+alias gd='git diff | mate'
+alias gc='git commit -v'
+alias gca='git commit -v -a'
+alias gb='git branch'
+alias gba='git branch -a'
+alias lf='ls -art|tail -3|grep -v "^.$"|grep -v "^..$"'

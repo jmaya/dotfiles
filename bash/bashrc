@@ -1,0 +1,3 @@
+. ~/dev/dotfiles/bash/aliases
+. ~/dev/dotfiles/bash/environment
+if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
