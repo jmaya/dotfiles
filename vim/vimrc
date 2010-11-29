@@ -62,5 +62,4 @@ autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 colorscheme vividchalk
 
 " Fuzzy finder mapping
-map <c-t> :FufJumpList<cr>
-
+map <leader>f :FufFile **/<CR>
