@@ -63,3 +63,30 @@ colorscheme vividchalk
 
 " Fuzzy finder mapping
 map <leader>f :FufFile **/<CR>
+
+" for php zend development
+set tabstop=2
+set shiftwidth=2
+set expandtab
+if has("autocmd")
+autocmd BufEnter *.ctp set syn=php
+autocmd BufEnter *.phtml set syn=php
+endif
+syn on
+set ai
+
+set wrap
+set number
+
+fun! SpecIt(command)
+  if a:command == ''
+    let dir = 'spec'
+  else
+    let dir = a:command
+  endif
+  cexpr system("bundle exec rspec -r ~/.vim/bin/vim_formatter.rb -f Spec::Runner::Formatter::VimFormatter " . dir)"a:command)
+  cw
+endfun
+
+map <leader>s :SpecIt<space>
+

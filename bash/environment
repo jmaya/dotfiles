@@ -1,14 +1,18 @@
 export AUTOFEATURE=true
-export CDPATH=~/dev:~/dev/rails:~/dev/ruby:~/dev/sinatra
+#export CDPATH=~/dev:~/dev/rails:~/dev/ruby:~/dev/sinatra
 export DYLD_LIBRARY_PATH="/opt/oracle/instantclient_10_2"
 export EC2_CERT=~/.ec2/cert-GT4OYEY7NHMWEERC764HHFIRUJ5QBLO3.pem
 export EC2_HOME=/usr/local/ec2-api-tools-1.2-13740
 export EC2_PRIVATE_KEY=~/.ec2/pk-GT4OYEY7NHMWEERC764HHFIRUJ5QBLO3.pem
 export EDITOR=vim
+export VISUAL=vim
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home
 export JRUBY_HOME=/Users/jmaya/bin/jruby/jruby-1.1.6
 export MANPATH=/opt/local/share/man:$MANPATH
-export ORACLE_HOME=/opt/oracle/instantclient_10_2
+#export ORACLE_HOME=/opt/oracle/instantclient_10_2
+export ORACLE_HOME=/Users/jmaya/bin/instantclient_10_2
+#export TNS_ADMIN=/opt/oracle/tns
+#export TNS_ADMIN=/opt/oracle/tns
 export P4CLIENT=jmayamac
 export P4PORT=10.215.44.80:1666
 export P4USER=jmaya
@@ -19,12 +23,29 @@ export PATH=/Users/jmaya/dev/python/Python-2.7/bin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export PATH=/usr/local/mysql/bin:$ORACLE_HOME:~/bin:/usr/local/bin:/opt/local/bin:$PATH:$JRUBY_HOME/ bin
 export PATH=~/dev/dotfiles/bin:$PATH
-export PS1="\[\033[38m\]\u@\h\[\033[01;34m\] \w \[\033[31m\]\`ruby -e \"print (%x{git branch 2> /dev/null}.grep(/^\*/).first || '').gsub(/^\* (.+)$/, '(\1) ')\"\`\[\033[37m\]$\[\033[00m\] "
+#export PS1="\[\033[38m\]\u@\h\[\033[01;34m\] \w \[\033[31m\]\`ruby -e \"print (%x{git branch 2> /dev/null}.grep(/^\*/).first || '').gsub(/^\* (.+)$/, '(\1) ')\"\`\[\033[37m\]$\[\033[00m\] "
 export PYTHONPATH=/Users/jmaya/dev/python/django-trunk
 export RUBY_HOME=/Users/jmaya/ruby/ruby
-export TNS_ADMIN=/opt/oracle/tns
-export PATH=/opt/oracle/instantclient_10_2:$PATH
+export PATH=$ORACLE_HOME:$PATH
 
-export VISUAL=vim
 if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
 
+
+#Zend Framework
+export PATH=/Users/jmaya/dev/php/Zend/trunk/bin:$PATH
+
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+# set the PS1 variable
+export PS1="\w\[\e[0;33;49m\]\$(parse_git_branch)\[\e[0;0m\]$ "
+
+#ldap password
+export PATH=/Users/jmaya/dev/rails/rldappass/bin:$PATH
+
+#set it to 254 color only if running ITERM2 app since it 
+#supports it
+if [ $TERM_PROGRAM == 'iTerm.app' ]
+ then
+  export TERM=xterm-256color
+fi

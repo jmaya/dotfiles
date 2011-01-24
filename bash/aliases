@@ -66,3 +66,11 @@ alias gca='git commit -v -a'
 alias gb='git branch'
 alias gba='git branch -a'
 alias lf='ls -art|tail -3|grep -v "^.$"|grep -v "^..$"'
+
+alias work='terminitor'
+
+alias h='history'
+alias ..='cd ..'
+alias migrate='rake db:migrate db:test:prepare'
+alias killrubies="ps -eaf|grep ruby|grep -v 'grep ruby'|awk '{print $2}'|xargs kill -9"
+
