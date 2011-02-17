@@ -78,15 +78,21 @@ set ai
 set wrap
 set number
 
-fun! SpecIt(command)
+function! RunSpec(command)
+  " TODO: handle args such as --tag focus here, or make a separate command for it
   if a:command == ''
     let dir = 'spec'
   else
     let dir = a:command
   endif
-  cexpr system("bundle exec rspec -r ~/.vim/bin/vim_formatter.rb -f Spec::Runner::Formatter::VimFormatter " . dir)"a:command)
+  cexpr system("rspec  -r ~/.vim/bin/vim_formatter -f VimFormatter " . dir)
   cw
-endfun
+endfunction
+command! -nargs=? -complete=file Spec call RunSpec(<q-args>)
+map <leader>s :Spec<space>
 
-map <leader>s :SpecIt<space>
+set laststatus=2 " Enables the status line at the bottom of Vim
+set statusline=%{GitBranchInfoString()}
 
+set backupdir=~/.vim/backup_dir,~/_vim/backup_dir,~/tmp,~/
+set directory=~/.vim/backup_dir,~/_vim/backup_dir,~/tmp,~/

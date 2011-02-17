@@ -74,3 +74,5 @@ alias ..='cd ..'
 alias migrate='rake db:migrate db:test:prepare'
 alias killrubies="ps -eaf|grep ruby|grep -v 'grep ruby'|awk '{print $2}'|xargs kill -9"
 
+#create ramdisk
+alias create_ramdisk='diskutil erasevolume HFS+ "ramdisk" `hdiutil attach -nomount ram://1165430`'

@@ -1,0 +1,264 @@
+ServerAliveInterval=15
+
+host amazon1
+ user deploy
+ hostname ec2-184-72-231-102.compute-1.amazonaws.com
+ port 22
+ IdentityFile ~/.ec2/mykey.pem
+
+host www.pardoo.com
+	user root
+host www2.pardoo.com
+	user root
+	hostname 207.150.193.17
+
+host utla002_svn
+	Hostname localhost
+	port 1500
+host cht1utla001-ext
+	Hostname 216.236.227.145
+	port 15151
+host cht1utld001
+	Hostname 168.75.198.182
+	port 15151
+host www.lasamaria.com
+	Hostname 192.168.5.2
+	#Hostname 98.203.108.7
+	#port 15151
+
+host mgtlav000-ext
+	ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc 10.209.43.121 22
+
+host mgtla001
+	ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc 10.209.41.69 22
+
+host cht1wsa003b-ext
+	ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa003b 22
+
+
+host cht1dsa004
+	ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1dsa004 22
+
+host cht1wsa003b
+	ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa003b 22
+
+host cht1utlb001
+	Hostname 216.236.227.210
+	port 15151
+
+host cht1utla002-ext
+	ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1utla002-front 22
+	Hostname cht1utla002-admin
+
+Host corb3000  
+	ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cora300.introi.ewebhealth.net 22
+
+Host cht1wsa001
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa001 22
+
+Host cht1wsa001a
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa001a 22
+
+Host cht1wsa001b
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa001b 22
+
+Host cht1wsa002
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa002 22
+
+Host cht1wsa002a
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa002a 22
+
+Host cht1wsa002b
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa002b 22
+
+Host cht1wsa003
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc 10.209.39.42 22
+
+Host cht1wsa003a
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa003a 22
+
+#Host cht1wsa003b
+#        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa003b 22
+
+Host cht1wsa065
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa065 22
+
+Host cht1wsa066
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa066 22
+
+Host cht1wsa075
+Host cht1wsa075
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa075 22
+
+Host cht1wsa075a
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa075a 22
+
+Host cht1wsa075b
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa075b 22
+
+Host cht1wsa076
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa076 22
+
+Host cht1wsa076a
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa076a 22
+
+
+Host cht1wsa076b
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa076b 22
+
+Host cht1wsa077
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa077 22
+
+Host cht1wsa077a
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa077a 22
+
+Host cht1wsa077b
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa077b 22
+
+Host cht1wsa200
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa200 22
+ 
+Host cht1dsa065
+	ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc     cht1dsa065 22
+
+Host cht1wsa201
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa201 22
+
+Host cht1wsa201a
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa201a 22
+
+Host cht1wsa201b
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa201b 22
+
+Host cht1wsa201c
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa201c 22
+
+Host cht1wsa150
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa150 22
+
+Host cht1wsa150a
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa150a 22
+
+Host cht1wsa150b
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa150b 22
+
+Host cht1wsa150c
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa150c 22
+
+Host cht1wsa150d
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa150d 22
+
+Host cht1wsa150e
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa150e 22
+
+Host cht1wsa150f
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa150f 22
+
+Host cht1wsa150g
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa150g 22
+
+Host cht1wsa150h
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa150h 22
+
+Host cht1wsa151
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa151 22
+
+Host cht1wsa151a
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa151a 22
+
+Host cht1wsa151b
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa151b 22
+
+Host cht1wsa151c
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa151c 22
+
+Host cht1wsa151d
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa151d 22
+
+Host cht1wsa151e
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa151e 22
+
+Host cht1wsa151f
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa151f 22
+
+Host cht1wsa151g
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa151g 22
+
+Host cht1wsa151h
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa151h 22
+
+Host cht1wsa152
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa152 22
+
+Host cht1wsa152a
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa152a 22
+
+Host cht1wsa152b
+	        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa152b 22
+Host cht1wsa152c
+	        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa152c 22
+Host cht1wsa152d
+	        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa152d 22
+
+Host cht1dsa001
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1dsa001 22
+
+Host cht1dsa002
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1dsa002 22
+
+Host cht1dsa075
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1dsa075 22
+
+Host cht1dsa076
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1dsa076 22
+
+Host cht1dsa076a
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1dsa076a 22
+
+Host cht1dsa076b
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1dsa076b 22
+
+Host cht1nfsa001
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1nfsa001 22
+
+Host cht1nfsa002
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1nfsa002 22
+
+Host cht1nfsa075
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1nfsa075 22
+
+Host cht1dba001
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1dba001 22
+
+Host cht1dba076
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1dba076 22
+
+Host cht1dba002
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1dba002 22
+
+Host cht1dba002
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1dba002 22
+
+Host cht1dba075
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1dba075 22
+
+Host and-roi-web02
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc 10.209.43.102 22
+
+Host and-roi-app02
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc 10.209.43.104 22
+Host atl-squidbox
+	 Hostname 63.211.125.19
+	  port 15151
+
+host cht1wsa071a
+        ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa071a 22
+
+host telemundo.metroblueentertainment.com
+    IdentityFile ~/.ec2/mykey.pem
+    User deploy
+
+host akcapital
+    Hostname 50.16.205.59
+    IdentityFile ~/.ec2/akcapital.pem
+    User deploy
