@@ -45,7 +45,7 @@ export PATH=/Users/jmaya/dev/rails/rldappass/bin:$PATH
 
 #set it to 254 color only if running ITERM2 app since it 
 #supports it
-if [ $TERM_PROGRAM == 'iTerm.app' ]
+if [ "$TERM_PROGRAM" = 'iTerm.app' ]
  then
   export TERM=xterm-256color
 fi
