@@ -20,8 +20,6 @@ set hlsearch    "hilight searches by default
 set nowrap      "dont wrap lines
 set linebreak   "wrap lines at convenient points
 
-"statusline setup
-set statusline=%f       "tail of the filename
 "indent settings
 set shiftwidth=4
 set softtabstop=4
@@ -92,7 +90,32 @@ command! -nargs=? -complete=file Spec call RunSpec(<q-args>)
 map <leader>s :Spec<space>
 
 set laststatus=2 " Enables the status line at the bottom of Vim
-set statusline=%{GitBranchInfoString()}
+" set statusline=%{GitBranchInfoString()}
+set statusline=%F%m%r%h%w[%L]%y[%p%%][%04v][%{fugitive#statusline()}]
+
 
 set backupdir=~/.vim/backup_dir,~/_vim/backup_dir,~/tmp,~/
 set directory=~/.vim/backup_dir,~/_vim/backup_dir,~/tmp,~/
+
+" NERDTree
+let NERDTreeShowBookmarks = 1
+let NERDChristmasTree = 1
+let NERDTreeWinPos = "left"
+let NERDTreeHijackNetrw = 1
+let NERDTreeQuitOnOpen = 1
+let NERDTreeWinSize = 50 
+map <leader>p :NERDTreeToggle<cr>
+
+
+
+
+" Force me to use the real keys
+" " Move around lines
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>

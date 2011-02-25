@@ -35,6 +35,9 @@ host mgtla001
 host cht1wsa003b-ext
 	ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1wsa003b 22
 
+host orala000
+	ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc 10.209.41.183 22
+
 
 host cht1dsa004
 	ProxyCommand ssh -p 15151 jmaya@216.236.227.145 /usr/local/nc/bin/nc cht1dsa004 22
