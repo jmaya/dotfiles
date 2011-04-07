@@ -104,7 +104,8 @@ let NERDTreeWinPos = "left"
 let NERDTreeHijackNetrw = 1
 let NERDTreeQuitOnOpen = 1
 let NERDTreeWinSize = 50 
-map <leader>p :NERDTreeToggle<cr>
+map <leader>l :NERDTreeToggle<cr>
+
 
 
 
@@ -119,3 +120,12 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+augroup vagrant
+  au!
+  au BufRead,BufNewFile Vagrantfile set filetype=ruby
+augroup END
+
+" Format the hole file with F5
+map   <silent> <F5> mmgg=G`m^
+imap  <silent> <F5> <Esc> mmgg=G`m^

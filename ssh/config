@@ -21,8 +21,8 @@ host cht1utla001-ext
 host cht1utld001
 	Hostname 168.75.198.182
 	port 15151
-host www.lasamaria.com
-	Hostname 192.168.5.2
+# host www.lasamaria.com
+# 	Hostname 192.168.5.2
 	#Hostname 98.203.108.7
 	#port 15151
 

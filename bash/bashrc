@@ -3,3 +3,6 @@
 PATH=/usr/local/sbin:$PATH
 
 if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
+
+# set -o vi
+# bind '"\e."':yank-last-arg

@@ -377,4 +377,6 @@ snippet tas
 	task :${2:task_name => [:dependent, :tasks]} do
 		${3}
 	end
-
+#File Join fj
+snippet fj
+	File.join(File.dirname(__FILE__), "${1:Folder}", "${2:Next}")${3}

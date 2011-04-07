@@ -1,8 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/jmaya/dev/perl/fusioninventory-agent/lib/FusionInventory/Agent'
 let g:netrw_dirhist_2='/Users/jmaya/dev/perl/fusioninventory-agent/lib/FusionInventory/Agent/Task'
 let g:netrw_dirhist_3='/Users/jmaya/dev/perl/fusioninventory-agent/lib/FusionInventory/Agent/Task/Inventory'
 let g:netrw_dirhist_4='/Users/jmaya/dev/perl/fusioninventory-agent/lib/FusionInventory/Agent/Task/Inventory/OS'
 let g:netrw_dirhist_5='/Users/jmaya/dev/perl/fusioninventory-agent/lib/FusionInventory/Agent/Task/Inventory/OS/Solaris'
 let g:netrw_dirhist_6='/Users/jmaya/dev/ChartOne/Channel'
+let g:netrw_dirhist_7='/Users/jmaya/tmp/ruby-4-rails.showoff'
+let g:netrw_dirhist_8='/Users/jmaya/tmp/inventory'

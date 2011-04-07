@@ -27,6 +27,8 @@ export PATH=~/dev/dotfiles/bin:$PATH
 export PYTHONPATH=/Users/jmaya/dev/python/django-trunk
 export RUBY_HOME=/Users/jmaya/ruby/ruby
 export PATH=$ORACLE_HOME:$PATH
+export NLS_LANG="AMERICAN_AMERICA.UTF8"
+
 
 if [ -s ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
 
