@@ -1,0 +1,7 @@
+You will need to check out this git repo in your ~/dev/dotfiles directory
+This file is hard coded by some of the aliases.
+
+Once you download this please execute move_in.sh.
+
+This script will backup your .* files and replace them with symlinks
+
