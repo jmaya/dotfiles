@@ -12,12 +12,12 @@ alias cht1utlb001='ssh cht1utlb001.eng.charone.com'
 
 
 #SSH alias
-alias utla='ssh -A -p 15151 jmaya@216.236.227.145'
+alias utla='ssh -A -p 15151 216.236.227.145'
 alias utld='ssh -p 15151 168.75.198.182'
 alias utlb='ssh -p 15151 216.236.227.210'
 alias server='ssh www.lasamaria.com'
 alias ssh='ssh -A'
-alias stagewebis='ssh -L 3000:10.241.13.28:3000 jmaya@168.75.198.182 -p 15151'
+alias stagewebis='ssh -L 3000:10.241.13.28:3000 168.75.198.182 -p 15151'
 
 #Top
 alias tu='top -o cpu' #cpu
