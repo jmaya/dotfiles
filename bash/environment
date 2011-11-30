@@ -42,3 +42,5 @@ if [ "$TERM_PROGRAM" = 'iTerm.app' ]
  then
   export TERM=xterm-256color
 fi
+
+export PATH=/Users/jmaya/bin/vim7/bin:$PATH

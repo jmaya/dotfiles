@@ -6,6 +6,10 @@ host amazon1
  port 22
  IdentityFile ~/.ec2/mykey.pem
 
+
+host gbay-linux02
+	user john.maya
+
 host www.pardoo.com
 	user root
 host www2.pardoo.com
@@ -27,10 +31,10 @@ host cht1utld001
 	#port 15151
 
 host mgtlav000-ext
-	ProxyCommand ssh -p 15151 216.236.227.145 /usr/local/nc/bin/nc 10.209.43.121 22
+	ProxyCommand ssh -p 15151 216.236.227.145 /usr/local/nc/bin/nc 10.209.43.121 22 
 
 host mgtla001
-	ProxyCommand ssh -p 15151 216.236.227.145 /usr/local/nc/bin/nc 10.209.41.69 22
+	ProxyCommand ssh -p 15151 216.236.227.145 /usr/local/nc/bin/nc 10.209.41.69 22 
 
 host cht1wsa003b-ext
 	ProxyCommand ssh -p 15151 216.236.227.145 /usr/local/nc/bin/nc cht1wsa003b 22
@@ -265,3 +269,6 @@ host akcapital
     Hostname 50.16.205.59
     IdentityFile ~/.ec2/akcapital.pem
     User deploy
+host tonido
+    Hostname 192.168.5.3
+    User root

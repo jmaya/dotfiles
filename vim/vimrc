@@ -112,14 +112,14 @@ map <leader>l :NERDTreeToggle<cr>
 
 " Force me to use the real keys
 " " Move around lines
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
+" nnoremap <up> <nop>
+" nnoremap <down> <nop>
+" nnoremap <left> <nop>
+" nnoremap <right> <nop>
+" inoremap <up> <nop>
+" inoremap <down> <nop>
+" inoremap <left> <nop>
+" inoremap <right> <nop>
 
 augroup vagrant
   au!
@@ -129,3 +129,8 @@ augroup END
 " Format the hole file with F5
 map   <silent> <F5> mmgg=G`m^
 imap  <silent> <F5> <Esc> mmgg=G`m^
+set rnu
+
+
+" handle handlebars files
+au BufRead,BufNewFile *.handlebars,*.hbs set ft=handlebars
